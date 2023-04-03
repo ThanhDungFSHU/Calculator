@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="display">
+            <p></p>
+        </div>
+        <div id="numpad">
+            <div class="row">
+                <button onclick="addNumber(7)">7</button>
+                <button onclick="addNumber(8)">8</button>
+                <button onclick="addNumber(9)">9</button>
+                <button class="operator div" onclick="setOperator('div')">/</button>
+            </div>
+            <div class="row">
+                <button onclick="addNumber(4)">4</button>
+                <button onclick="addNumber(5)">5</button>
+                <button onclick="addNumber(6)">6</button>
+                <button class="operator mul" onclick="setOperator('mul')">*</button>
+            </div>
+            <div class="row">
+                <button onclick="addNumber(1)">1</button>
+                <button onclick="addNumber(2)">2</button>
+                <button onclick="addNumber(3)">3</button>
+                <button class="operator minus" onclick="setOperator('minus')">-</button>
+            </div>
+            <div class="row">
+                <button onclick="addNumber(0)">0</button>
+                <button class="operator decimal">.</button>
+                <button class="operator equal" onclick="cal()">=</button>
+                <button class="operator plus" onclick="setOperator('plus')">+</button>
+            </div>
+            <div class="row last-row">
+                
+                <button class="operator delete">DEL</button>
+                <button class="operator reset">AC</button>
+            </div>
+        </div>
+    </div>
+    <script src="input.js"></script>
+</body>
+</html>
